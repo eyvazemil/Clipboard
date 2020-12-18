@@ -1,33 +1,115 @@
-fatal: write failure on standard output: Bad file descriptor
-To https://github.com/eyvazemil/Clipboard.git
-   95fd49a..87a5e75  master -> master
-fatal: write failure on standard output: Bad file descriptor
-To https://github.com/eyvazemil/Clipboard.git
-   87a5e75..5a85c0a  master -> master
-fatal: write failure on standard output: Bad file descriptor
-To https://github.com/eyvazemil/Clipboard.git
-   5a85c0a..742f5fb  master -> master
-fatal: write failure on standard output: Bad file descriptor
-To https://github.com/eyvazemil/Clipboard.git
-   742f5fb..27659c1  master -> master
-fatal: write failure on standard output: Bad file descriptor
-To https://github.com/eyvazemil/Clipboard.git
-   27659c1..d40df2b  master -> master
-fatal: write failure on standard output: Bad file descriptor
-To https://github.com/eyvazemil/Clipboard.git
-   d40df2b..6f1002a  master -> master
-fatal: write failure on standard output: Bad file descriptor
-To https://github.com/eyvazemil/Clipboard.git
-   6f1002a..0f4fa04  master -> master
-fatal: write failure on standard output: Bad file descriptor
-To https://github.com/eyvazemil/Clipboard.git
-   0f4fa04..fea60b6  master -> master
-fatal: write failure on standard output: Bad file descriptor
-To https://github.com/eyvazemil/Clipboard.git
-   fea60b6..42b0cc7  master -> master
-fatal: write failure on standard output: Bad file descriptor
-To https://github.com/eyvazemil/Clipboard.git
-   42b0cc7..5581a97  master -> master
-fatal: write failure on standard output: Bad file descriptor
-To https://github.com/eyvazemil/Clipboard.git
-   5581a97..e1c7007  master -> master
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
