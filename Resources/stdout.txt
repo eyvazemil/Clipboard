@@ -4,3 +4,6 @@ To https://github.com/eyvazemil/Clipboard.git
 fatal: write failure on standard output: Bad file descriptor
 To https://github.com/eyvazemil/Clipboard.git
    87a5e75..5a85c0a  master -> master
+fatal: write failure on standard output: Bad file descriptor
+To https://github.com/eyvazemil/Clipboard.git
+   5a85c0a..742f5fb  master -> master
