@@ -1,2 +1,3 @@
 
-void free_only_queue(Item * items_start)
+*items_end = new_items_end;
+            *current_queue_size = new_queue_size;
