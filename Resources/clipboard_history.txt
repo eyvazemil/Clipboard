@@ -1,9 +1,9 @@
 00:
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
-01:
-top-stories --page-size=1 --comment=top
-02:
 /home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
+01:
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
+02:
+top-stories --page-size=1 --comment=top
 03:
 void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int size_of_clipboard) {
     int line_count = 0, str_len = 0, new_queue_size = 0;
