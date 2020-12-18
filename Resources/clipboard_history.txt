@@ -1,3 +1,5 @@
 00:
+top-stories --page-size=1 --comment=top
+01:
 *items_end = new_items_end;
             *current_queue_size = new_queue_size;
