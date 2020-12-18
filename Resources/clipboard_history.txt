@@ -1,13 +1,4 @@
 00:
-top-stories --page-size=1 --comment=top
-01:
-cache_dir + "/Items/" + i + ".txt"
-02:
-*items_end = new_items_end;
-            *current_queue_size = new_queue_size;
-03:
-void free_only_queue(Item * items_start)
-04:
 void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int size_of_clipboard) {
     int line_count = 0, str_len = 0, new_queue_size = 0;
     char * str = NULL, * line = NULL;
@@ -44,6 +35,15 @@ void read_clip_history(Item ** items_start, Item ** items_end, char * file_name,
     *items_end = new_items_end;
     *current_queue_size = new_queue_size;
 }
+01:
+top-stories --page-size=1 --comment=top
+02:
+cache_dir + "/Items/" + i + ".txt"
+03:
+*items_end = new_items_end;
+            *current_queue_size = new_queue_size;
+04:
+void free_only_queue(Item * items_start)
 05:
 top-stories --page-size=40 --page=4
 06:
