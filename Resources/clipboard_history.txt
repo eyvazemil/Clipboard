@@ -1,0 +1,13 @@
+00:
+i.substring(0, i.length - 4)
+01:
+if(updated_entities.updated_items.contains(i.substring(0, i.length - 4).toInt)) // item is in the updated list
+02:
+*items_end = new_items_end;
+            *current_queue_size = new_queue_size;
+03:
+/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
+04:
+cache_dir + "/Items/" + i + ".txt"
+05:
+void free_only_queue(Item * items_start)

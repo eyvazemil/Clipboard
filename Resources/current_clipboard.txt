@@ -1,0 +1,2 @@
+
+i.substring(0, i.length - 4)
