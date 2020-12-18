@@ -1,2 +1,3 @@
 
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
+*items_end = new_items_end;
+            *current_queue_size = new_queue_size;
