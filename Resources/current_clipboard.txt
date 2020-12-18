@@ -1,2 +1,3 @@
 
-cache_dir + "/" + "Items"
+*items_end = new_items_end;
+            *current_queue_size = new_queue_size;
