@@ -1,4 +1,12 @@
 00:
+Item * tmp = items_start, * next;
+    while(tmp) {
+        next = tmp->next;
+        free(tmp->elem);
+        free(tmp);
+        tmp = next;
+    }
+01:
 void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int size_of_clipboard) {
     int line_count = 0, str_len = 0, new_queue_size = 0;
     char * str = NULL, * line = NULL;
@@ -35,22 +43,22 @@ void read_clip_history(Item ** items_start, Item ** items_end, char * file_name,
     *items_end = new_items_end;
     *current_queue_size = new_queue_size;
 }
-01:
-top-stories --page-size=1 --comment=top
 02:
-cache_dir + "/Items/" + i + ".txt"
+top-stories --page-size=1 --comment=top
 03:
+cache_dir + "/Items/" + i + ".txt"
+04:
 *items_end = new_items_end;
             *current_queue_size = new_queue_size;
-04:
-void free_only_queue(Item * items_start)
 05:
-top-stories --page-size=40 --page=4
+void free_only_queue(Item * items_start)
 06:
-git remote add origin https://github.com/eyvazemil/Clipboard.git
+top-stories --page-size=40 --page=4
 07:
-i.substring(0, i.length - 4)
+git remote add origin https://github.com/eyvazemil/Clipboard.git
 08:
-if(updated_entities.updated_items.contains(i.substring(0, i.length - 4).toInt)) // item is in the updated list
+i.substring(0, i.length - 4)
 09:
+if(updated_entities.updated_items.contains(i.substring(0, i.length - 4).toInt)) // item is in the updated list
+10:
 /home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
