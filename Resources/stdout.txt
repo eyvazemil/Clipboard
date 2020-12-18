@@ -1,0 +1,3 @@
+fatal: write failure on standard output: Bad file descriptor
+To https://github.com/eyvazemil/Clipboard.git
+   b77e827..1a381e0  master -> master
