@@ -55,7 +55,7 @@ char * str_copy(char *);
 // free 2D array
 void free_2d_array(char **, int);
 // read clipboard history from file
-void read_clip_history(Item **, Item **, char *, int *, int *, int);
+void read_clip_history(Item **, Item **, char *, int *, int);
 // append one string to another
 void str_append(char **, char *, int *);
 // free only the queue, without freeing args
@@ -224,10 +224,10 @@ int main(int argc, char ** argv) {
         args_for_exec[2] = str_copy(parent_pid);
         args_for_exec[3] = (char *) NULL;
         args_exec_size = 4;
-        run_exec(args_to_free, args_for_exec, items_start, LOG_FILE, args_size, args_exec_size, 0);
+        //run_exec(args_to_free, args_for_exec, items_start, LOG_FILE, args_size, args_exec_size, 0);
         free_2d_array(args_for_exec, args_exec_size);
         // synch history file with linked list
-        read_clip_history(&items_start, &items_end, HISTORY_CLIP_FILE, &current_queue_size, &flag_inserted, size_of_clipboard);
+        //read_clip_history(&items_start, &items_end, HISTORY_CLIP_FILE, &current_queue_size, &flag_inserted, size_of_clipboard);
 
         // run exec to read current clipboard(execl(CLIP_READ_SCRIPT, CLIP_READ_SCRIPT, CURRENT_CLIP_FILE, parent_pid, (char *) NULL))
         args_for_exec = (char **) malloc(4 * sizeof(char *));
@@ -374,7 +374,7 @@ void run_exec(char ** args_to_free, char ** args_for_exec, Item * items_start, c
     }
 }
 
-void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int * flag_inserted, int size_of_clipboard) {
+/*void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int * flag_inserted, int size_of_clipboard) {
     int line_count = 0, str_len = 0, new_queue_size = 0;
     char * str = NULL, * line = NULL;
     FILE * fp = fopen(file_name, "r");
@@ -436,9 +436,9 @@ void read_clip_history(Item ** items_start, Item ** items_end, char * file_name,
     }
     if(new_queue_size) // clipboard should be updated
         *flag_inserted = 1;
-}
+}*/
 
-/*void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int * flag_inserted, int size_of_clipboard) {
+void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int size_of_clipboard) {
     int line_count = 0, str_len = 0, new_queue_size = 0;
     char * str = NULL, * line = NULL;
     FILE * fp = fopen(file_name, "r");
@@ -473,7 +473,7 @@ void read_clip_history(Item ** items_start, Item ** items_end, char * file_name,
     *items_start = new_items_start;
     *items_end = new_items_end;
     *current_queue_size = new_queue_size;
-}*/
+}
 
 // AVL related
 int my_compare(const void * a, const void * b) {

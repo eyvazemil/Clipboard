@@ -1,2 +1,3 @@
 
-i.substring(0, i.length - 4)
+*current_queue_size = new_queue_size;
+14:
