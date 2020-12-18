@@ -1,2 +1,2 @@
 
-i.substring(0, i.length - 4)
+git remote add origin https://github.com/eyvazemil/Clipboard.git
