@@ -1,17 +1,54 @@
 00:
-top-stories --page-size=40 --page=4
+void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int size_of_clipboard) {
+    int line_count = 0, str_len = 0, new_queue_size = 0;
+    char * str = NULL, * line = NULL;
+    FILE * fp = fopen(file_name, "r");
+    Item * new_items_start = NULL, * new_items_end = NULL;
+    size_t line_len = 0;
+
+    /* read new clipboard */
+    while((line_count = getline(&line, &line_len, fp))) {
+        if(line_count < 0 || (isdigit(line[0]) && isdigit(line[1]) && line[2] == ':')) { // EOF or new record
+            // insert into linked list
+            if(str) {
+                str[strlen(str) - 1] = '\0'; // last character in each record is added newline, so delete it
+                insert_item(&new_items_start, &new_items_end, str, &new_queue_size, size_of_clipboard, 1);
+            }
+            // reset the string
+            str_len = 0;
+            free(str);
+            str = NULL;
+            // if EOF was reached
+            if(line_count < 0) {
+                free(line);
+                break;
+            }
+        } else str_append(&str, line, &str_len);
+        free(line);
+        line_len = 0;
+        line = NULL;
+    }
+    fclose(fp);
+    // attach newly added items to the start of the queue(if they exist)
+    free_only_queue(*items_start);
+    *items_start = new_items_start;
+    *items_end = new_items_end;
+    *current_queue_size = new_queue_size;
+}
 01:
-git remote add origin https://github.com/eyvazemil/Clipboard.git
+top-stories --page-size=40 --page=4
 02:
-i.substring(0, i.length - 4)
+git remote add origin https://github.com/eyvazemil/Clipboard.git
 03:
-if(updated_entities.updated_items.contains(i.substring(0, i.length - 4).toInt)) // item is in the updated list
+i.substring(0, i.length - 4)
 04:
+if(updated_entities.updated_items.contains(i.substring(0, i.length - 4).toInt)) // item is in the updated list
+05:
 *items_end = new_items_end;
             *current_queue_size = new_queue_size;
-05:
-/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
 06:
-cache_dir + "/Items/" + i + ".txt"
+/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
 07:
+cache_dir + "/Items/" + i + ".txt"
+08:
 void free_only_queue(Item * items_start)

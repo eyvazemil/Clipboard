@@ -55,7 +55,7 @@ char * str_copy(char *);
 // free 2D array
 void free_2d_array(char **, int);
 // read clipboard history from file
-void read_clip_history(Item **, Item **, char *, int *, int);
+void read_clip_history(Item **, Item **, char *, int *, int *, int);
 // append one string to another
 void str_append(char **, char *, int *);
 // free only the queue, without freeing args
@@ -227,7 +227,7 @@ int main(int argc, char ** argv) {
         run_exec(args_to_free, args_for_exec, items_start, LOG_FILE, args_size, args_exec_size, 0);
         free_2d_array(args_for_exec, args_exec_size);
         // synch history file with linked list
-        read_clip_history(&items_start, &items_end, HISTORY_CLIP_FILE, &current_queue_size, size_of_clipboard);
+        read_clip_history(&items_start, &items_end, HISTORY_CLIP_FILE, &current_queue_size, &flag_inserted, size_of_clipboard);
 
         // run exec to read current clipboard(execl(CLIP_READ_SCRIPT, CLIP_READ_SCRIPT, CURRENT_CLIP_FILE, parent_pid, (char *) NULL))
         args_for_exec = (char **) malloc(4 * sizeof(char *));
@@ -374,14 +374,79 @@ void run_exec(char ** args_to_free, char ** args_for_exec, Item * items_start, c
     }
 }
 
-void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int size_of_clipboard) {
+/*void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int * flag_inserted, int size_of_clipboard) {
     int line_count = 0, str_len = 0, new_queue_size = 0;
     char * str = NULL, * line = NULL;
     FILE * fp = fopen(file_name, "r");
     Item * new_items_start = NULL, * new_items_end = NULL;
     size_t line_len = 0;
 
-    /* read new clipboard */
+    // read new clipboard
+    while((line_count = getline(&line, &line_len, fp))) {
+        if(line_count < 0 || (isdigit(line[0]) && isdigit(line[1]) && line[2] == ':')) { // EOF or new record
+            // insert into linked list
+            if(str) {
+                str[strlen(str) - 1] = '\0'; // last character in each record is added newline, so delete it
+                if(*items_start && !strcmp(str, (*items_start)->elem)) { // after this point, clipboard doesn't change
+                    free(str);
+                    free(line);
+                    break;
+                }
+                insert_item(&new_items_start, &new_items_end, str, &new_queue_size, size_of_clipboard, 1);
+                new_queue_size++;
+            }
+            // reset the string
+            str_len = 0;
+            free(str);
+            str = NULL;
+            // if EOF was reached
+            if(line_count < 0) {
+                free(line);
+                break;
+            }
+        } else str_append(&str, line, &str_len);
+        free(line);
+        line_len = 0;
+        line = NULL;
+    }
+    fclose(fp);
+    // attach newly added items to the start of the queue(if they exist)
+    if(*items_start) {
+        // connect the end of the new list to the start of old
+        (*items_start)->prev = new_items_end;
+        if(new_items_end) { // new list exists
+            new_items_end->next = *items_start;
+            *items_start = new_items_start;
+        }
+        // check if number of new elements exceeds the allowed clipboard size
+        if(*current_queue_size + new_queue_size > size_of_clipboard) {
+            Item * tmp = *items_end;
+            for(int i = *current_queue_size + new_queue_size; i > size_of_clipboard; i--) {
+                tmp = tmp->prev;
+                free(tmp->next->elem);
+                free(tmp->next);
+            }
+            *items_end = tmp;
+            *current_queue_size = size_of_clipboard;
+        } else
+            *current_queue_size += new_queue_size;
+    } else {
+        *items_start = new_items_start;
+        *items_end = new_items_end;
+        *current_queue_size = new_queue_size;
+    }
+    if(new_queue_size) // clipboard should be updated
+        *flag_inserted = 1;
+}*/
+
+void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int * flag_inserted, int size_of_clipboard) {
+    int line_count = 0, str_len = 0, new_queue_size = 0;
+    char * str = NULL, * line = NULL;
+    FILE * fp = fopen(file_name, "r");
+    Item * new_items_start = NULL, * new_items_end = NULL;
+    size_t line_len = 0;
+
+    // read new clipboard
     while((line_count = getline(&line, &line_len, fp))) {
         if(line_count < 0 || (isdigit(line[0]) && isdigit(line[1]) && line[2] == ':')) { // EOF or new record
             // insert into linked list
