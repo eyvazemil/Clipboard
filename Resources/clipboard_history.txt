@@ -1,4 +1,6 @@
 00:
+/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
+01:
 void read_clip_history(Item ** items_start, Item ** items_end, char * file_name, int * current_queue_size, int size_of_clipboard) {
     int line_count = 0, str_len = 0, new_queue_size = 0;
     char * str = NULL, * line = NULL;
@@ -35,7 +37,7 @@ void read_clip_history(Item ** items_start, Item ** items_end, char * file_name,
     *items_end = new_items_end;
     *current_queue_size = new_queue_size;
 }
-01:
+02:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
@@ -43,13 +45,11 @@ Item * tmp = items_start, * next;
         free(tmp);
         tmp = next;
     }
-02:
+03:
 *items_end = new_items_end;
             *current_queue_size = new_queue_size;
-03:
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 04:
-/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 05:
 eyvazemil/Clipboard_synch
 06:
