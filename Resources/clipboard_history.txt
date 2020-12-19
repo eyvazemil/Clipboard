@@ -1,8 +1,10 @@
 00:
-*current_queue_size = size_of_clipboard;
+--ttl=200
 01:
-eyvazemil/Clipboard_synch
+*current_queue_size = size_of_clipboard;
 02:
+eyvazemil/Clipboard_synch
+03:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
@@ -10,16 +12,14 @@ Item * tmp = items_start, * next;
         free(tmp);
         tmp = next;
     }
-03:
-i.substring(0, i.length - 4)
 04:
-assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
+i.substring(0, i.length - 4)
 05:
-assert(Cache.cache_item_files.contains(id2))
+assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
 06:
-/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
+assert(Cache.cache_item_files.contains(id2))
 07:
---ttl=200
+/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
 08:
 while(tmp) {
         next = tmp->next;
