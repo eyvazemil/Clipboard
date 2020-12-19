@@ -1,9 +1,9 @@
 00:
---comment=top
-01:
-Items
-02:
 size_of_clipboard
+01:
+--comment=top
+02:
+Items
 03:
 add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 04:
