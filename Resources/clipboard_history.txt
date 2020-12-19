@@ -1,4 +1,6 @@
 00:
-top-stories --page-size=1 --comment=top
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 01:
+top-stories --page-size=1 --comment=top
+02:
 cache_dir + "/" + "Items"
