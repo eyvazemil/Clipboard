@@ -1,4 +1,6 @@
 00:
+assert(Cache.cache_item_files.contains(id2))
+01:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
@@ -6,9 +8,9 @@ Item * tmp = items_start, * next;
         free(tmp);
         tmp = next;
     }
-01:
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 02:
-top-stories --page-size=1 --comment=top
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 03:
+top-stories --page-size=1 --comment=top
+04:
 cache_dir + "/" + "Items"

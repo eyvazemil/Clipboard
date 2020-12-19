@@ -1,8 +1,2 @@
 
-Item * tmp = items_start, * next;
-    while(tmp) {
-        next = tmp->next;
-        free(tmp->elem);
-        free(tmp);
-        tmp = next;
-    }
+assert(Cache.cache_item_files.contains(id2))
