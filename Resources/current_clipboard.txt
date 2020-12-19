@@ -1,2 +1,2 @@
 
-top-stories
+--page-size=1
