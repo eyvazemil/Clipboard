@@ -1,2 +1,2 @@
 
-size_of_clipboard
+add_to_map
