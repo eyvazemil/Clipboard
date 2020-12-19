@@ -1,2 +1,5 @@
 
---ttl=200
+next = tmp->next;
+        free(tmp->elem);
+        free(tmp);
+        tmp = next;

@@ -1,16 +1,21 @@
 00:
---ttl=200
+next = tmp->next;
+        free(tmp->elem);
+        free(tmp);
+        tmp = next;
 01:
-assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
+--ttl=200
 02:
-Možný nástupní termín
+assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
 03:
-i.substring(0, i.length - 4)
+Možný nástupní termín
 04:
-*current_queue_size = size_of_clipboard;
+i.substring(0, i.length - 4)
 05:
-eyvazemil/Clipboard_synch
+*current_queue_size = size_of_clipboard;
 06:
+eyvazemil/Clipboard_synch
+07:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
@@ -18,32 +23,32 @@ Item * tmp = items_start, * next;
         free(tmp);
         tmp = next;
     }
-07:
-assert(Cache.cache_item_files.contains(id2))
 08:
-/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
+assert(Cache.cache_item_files.contains(id2))
 09:
+/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
+10:
 while(tmp) {
         next = tmp->next;
         free(tmp->elem);
         free(tmp);
         tmp = next;
     }
-10:
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 11:
-cache_dir + "/" + "Items"
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 12:
-cache_dir + "/Items/" + i + ".txt"
+cache_dir + "/" + "Items"
 13:
-top-stories --page-size=1 --comment=top
+cache_dir + "/Items/" + i + ".txt"
 14:
-i.substring(0, i.length - 4)
+top-stories --page-size=1 --comment=top
 15:
-*current_queue_size = size_of_clipboard;
+i.substring(0, i.length - 4)
 16:
-eyvazemil/Clipboard_synch
+*current_queue_size = size_of_clipboard;
 17:
+eyvazemil/Clipboard_synch
+18:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
