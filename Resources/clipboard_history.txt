@@ -1,14 +1,16 @@
 00:
-Možný nástupní termín
+assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
 01:
-i.substring(0, i.length - 4)
+Možný nástupní termín
 02:
---ttl=200
+i.substring(0, i.length - 4)
 03:
-*current_queue_size = size_of_clipboard;
+--ttl=200
 04:
-eyvazemil/Clipboard_synch
+*current_queue_size = size_of_clipboard;
 05:
+eyvazemil/Clipboard_synch
+06:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
@@ -16,8 +18,6 @@ Item * tmp = items_start, * next;
         free(tmp);
         tmp = next;
     }
-06:
-assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
 07:
 assert(Cache.cache_item_files.contains(id2))
 08:
@@ -53,5 +53,3 @@ Item * tmp = items_start, * next;
         free(tmp);
         tmp = next;
     }
-19:
-assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
