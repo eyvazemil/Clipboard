@@ -1,2 +1,2 @@
 
-stories
+https://courses.fit.cvut.cz/BI-OOP/projects/ASCII-art.html
