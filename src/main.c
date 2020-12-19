@@ -224,10 +224,10 @@ int main(int argc, char ** argv) {
         args_for_exec[2] = str_copy(parent_pid);
         args_for_exec[3] = (char *) NULL;
         args_exec_size = 4;
-        //run_exec(args_to_free, args_for_exec, items_start, LOG_FILE, args_size, args_exec_size, 0);
+        run_exec(args_to_free, args_for_exec, items_start, LOG_FILE, args_size, args_exec_size, 0);
         free_2d_array(args_for_exec, args_exec_size);
         // synch history file with linked list
-        //read_clip_history(&items_start, &items_end, HISTORY_CLIP_FILE, &current_queue_size, size_of_clipboard);
+        read_clip_history(&items_start, &items_end, HISTORY_CLIP_FILE, &current_queue_size, size_of_clipboard);
 
         // run exec to read current clipboard(execl(CLIP_READ_SCRIPT, CLIP_READ_SCRIPT, CURRENT_CLIP_FILE, parent_pid, (char *) NULL))
         args_for_exec = (char **) malloc(4 * sizeof(char *));
