@@ -1,5 +1,2 @@
 
-next = tmp->next;
-        free(tmp->elem);
-        free(tmp);
-        tmp = next;
+tmp = next;
