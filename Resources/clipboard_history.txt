@@ -1,7 +1,7 @@
 00:
-Jaké je Vaše nejvyšší dosažené vzdělání?
-01:
 Jaké pozice Vás zajímají?
+01:
+Jaké je Vaše nejvyšší dosažené vzdělání?
 02:
 tmp = next;
 03:
