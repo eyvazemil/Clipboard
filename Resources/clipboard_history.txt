@@ -1,30 +1,24 @@
 00:
-tmp = next;
+Jaké pozice Vás zajímají?
 01:
+tmp = next;
+02:
 next = tmp->next;
         free(tmp->elem);
         free(tmp);
         tmp = next;
-02:
---ttl=200
 03:
-assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
+--ttl=200
 04:
-Možný nástupní termín
+assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
 05:
-i.substring(0, i.length - 4)
+Možný nástupní termín
 06:
-*current_queue_size = size_of_clipboard;
+i.substring(0, i.length - 4)
 07:
-eyvazemil/Clipboard_synch
+*current_queue_size = size_of_clipboard;
 08:
-Item * tmp = items_start, * next;
-    while(tmp) {
-        next = tmp->next;
-        free(tmp->elem);
-        free(tmp);
-        tmp = next;
-    }
+eyvazemil/Clipboard_synch
 09:
 assert(Cache.cache_item_files.contains(id2))
 10:

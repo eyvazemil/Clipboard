@@ -1,2 +1,2 @@
 
-tmp = next;
+Jaké pozice Vás zajímají?
