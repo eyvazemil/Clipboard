@@ -1,2 +1,2 @@
 
-assert(Cache.cache_item_files.contains(id2))
+assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
