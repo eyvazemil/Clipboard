@@ -1,2 +1,2 @@
 
-assert(Cache.cache_item_files.contains(id2))
+top-stories --page-size=1 --comment=top
