@@ -1,6 +1,14 @@
 00:
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
+Item * tmp = items_start, * next;
+    while(tmp) {
+        next = tmp->next;
+        free(tmp->elem);
+        free(tmp);
+        tmp = next;
+    }
 01:
-top-stories --page-size=1 --comment=top
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 02:
+top-stories --page-size=1 --comment=top
+03:
 cache_dir + "/" + "Items"
