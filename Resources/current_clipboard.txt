@@ -1,2 +1,8 @@
 
-i.substring(0, i.length - 4)
+Item * tmp = items_start, * next;
+    while(tmp) {
+        next = tmp->next;
+        free(tmp->elem);
+        free(tmp);
+        tmp = next;
+    }

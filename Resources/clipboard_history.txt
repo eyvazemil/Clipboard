@@ -1,29 +1,4 @@
 00:
-i.substring(0, i.length - 4)
-01:
-assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
-02:
-assert(Cache.cache_item_files.contains(id2))
-03:
-/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
-04:
---ttl=200
-05:
-while(tmp) {
-        next = tmp->next;
-        free(tmp->elem);
-        free(tmp);
-        tmp = next;
-    }
-06:
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
-07:
-cache_dir + "/" + "Items"
-08:
-cache_dir + "/Items/" + i + ".txt"
-09:
-top-stories --page-size=1 --comment=top
-10:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
@@ -31,3 +6,28 @@ Item * tmp = items_start, * next;
         free(tmp);
         tmp = next;
     }
+01:
+i.substring(0, i.length - 4)
+02:
+assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
+03:
+assert(Cache.cache_item_files.contains(id2))
+04:
+/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
+05:
+--ttl=200
+06:
+while(tmp) {
+        next = tmp->next;
+        free(tmp->elem);
+        free(tmp);
+        tmp = next;
+    }
+07:
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
+08:
+cache_dir + "/" + "Items"
+09:
+cache_dir + "/Items/" + i + ".txt"
+10:
+top-stories --page-size=1 --comment=top
