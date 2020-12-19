@@ -1,2 +1,2 @@
 
-cache_dir + "/" + "Items"
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
