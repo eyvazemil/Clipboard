@@ -1,11 +1,11 @@
 00:
-assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
-01:
-Možný nástupní termín
-02:
-i.substring(0, i.length - 4)
-03:
 --ttl=200
+01:
+assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
+02:
+Možný nástupní termín
+03:
+i.substring(0, i.length - 4)
 04:
 *current_queue_size = size_of_clipboard;
 05:
@@ -40,12 +40,10 @@ top-stories --page-size=1 --comment=top
 14:
 i.substring(0, i.length - 4)
 15:
---ttl=200
-16:
 *current_queue_size = size_of_clipboard;
-17:
+16:
 eyvazemil/Clipboard_synch
-18:
+17:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
