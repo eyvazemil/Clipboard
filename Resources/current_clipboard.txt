@@ -1,2 +1,2 @@
 
-assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
+i.substring(0, i.length - 4)

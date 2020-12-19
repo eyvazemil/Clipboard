@@ -1,27 +1,29 @@
 00:
-assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
+i.substring(0, i.length - 4)
 01:
-assert(Cache.cache_item_files.contains(id2))
+assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
 02:
-/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
+assert(Cache.cache_item_files.contains(id2))
 03:
---ttl=200
+/home/user/Documents/CVUT/BIE-OOP/_2020/Project/hackernewsclient/src/test/scala/cz/cvut/fit/bioop/hackernewsclient/Cache_Test.scala
 04:
+--ttl=200
+05:
 while(tmp) {
         next = tmp->next;
         free(tmp->elem);
         free(tmp);
         tmp = next;
     }
-05:
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 06:
-cache_dir + "/" + "Items"
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 07:
-cache_dir + "/Items/" + i + ".txt"
+cache_dir + "/" + "Items"
 08:
-top-stories --page-size=1 --comment=top
+cache_dir + "/Items/" + i + ".txt"
 09:
+top-stories --page-size=1 --comment=top
+10:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
