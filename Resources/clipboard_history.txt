@@ -1,30 +1,30 @@
 00:
-Items
+--comment=top
 01:
-size_of_clipboard
+Items
 02:
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
+size_of_clipboard
 03:
-Jaké pozice Vás zajímají?
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 04:
-Jaké je Vaše nejvyšší dosažené vzdělání?
+Jaké pozice Vás zajímají?
 05:
-tmp = next;
+Jaké je Vaše nejvyšší dosažené vzdělání?
 06:
+tmp = next;
+07:
 next = tmp->next;
         free(tmp->elem);
         free(tmp);
         tmp = next;
-07:
---ttl=200
 08:
-assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
+--ttl=200
 09:
-Možný nástupní termín
+assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
 10:
-i.substring(0, i.length - 4)
+Možný nástupní termín
 11:
-*current_queue_size = size_of_clipboard;
+i.substring(0, i.length - 4)
 12:
 assert(Cache.cache_item_files.contains(id2))
 13:
