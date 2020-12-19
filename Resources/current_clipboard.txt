@@ -1,7 +1,2 @@
 
-while(tmp) {
-        next = tmp->next;
-        free(tmp->elem);
-        free(tmp);
-        tmp = next;
-    }
+--ttl=200

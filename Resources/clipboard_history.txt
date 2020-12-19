@@ -1,21 +1,23 @@
 00:
+--ttl=200
+01:
 while(tmp) {
         next = tmp->next;
         free(tmp->elem);
         free(tmp);
         tmp = next;
     }
-01:
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 02:
-cache_dir + "/" + "Items"
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 03:
-cache_dir + "/Items/" + i + ".txt"
+cache_dir + "/" + "Items"
 04:
-top-stories --page-size=1 --comment=top
+cache_dir + "/Items/" + i + ".txt"
 05:
-assert(Cache.cache_item_files.contains(id2))
+top-stories --page-size=1 --comment=top
 06:
+assert(Cache.cache_item_files.contains(id2))
+07:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
