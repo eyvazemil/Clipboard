@@ -1,2 +1,2 @@
 
-add_to_map
+top-stories
