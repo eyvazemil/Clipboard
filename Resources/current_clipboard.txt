@@ -1,2 +1,2 @@
 
-eyvazemil/Clipboard_synch
+*current_queue_size = size_of_clipboard;
