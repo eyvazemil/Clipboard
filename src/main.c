@@ -531,9 +531,6 @@ int insert_item(Item ** items_start, Item ** items_end, char * str, int * curren
         free(new_item);
         if(item_exists == *items_start) return 0;
         delete_item(items_start, items_end, item_exists->elem, current_queue_size);
-        //--
-        iterate_n_print(*items_start);
-        //--
         insert_item(items_start, items_end, str, current_queue_size, size_of_clipboard, flag_reversed);
     }
     return 1;

@@ -1,10 +1,12 @@
 00:
---ttl=200
+i.substring(0, i.length - 4)
 01:
-*current_queue_size = size_of_clipboard;
+--ttl=200
 02:
-eyvazemil/Clipboard_synch
+*current_queue_size = size_of_clipboard;
 03:
+eyvazemil/Clipboard_synch
+04:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
@@ -12,8 +14,6 @@ Item * tmp = items_start, * next;
         free(tmp);
         tmp = next;
     }
-04:
-i.substring(0, i.length - 4)
 05:
 assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
 06:
