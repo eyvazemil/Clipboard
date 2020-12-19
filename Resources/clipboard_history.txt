@@ -1,10 +1,12 @@
 00:
-cache_dir + "/Items/" + i + ".txt"
+cache_dir + "/" + "Items"
 01:
-top-stories --page-size=1 --comment=top
+cache_dir + "/Items/" + i + ".txt"
 02:
-assert(Cache.cache_item_files.contains(id2))
+top-stories --page-size=1 --comment=top
 03:
+assert(Cache.cache_item_files.contains(id2))
+04:
 Item * tmp = items_start, * next;
     while(tmp) {
         next = tmp->next;
@@ -12,7 +14,5 @@ Item * tmp = items_start, * next;
         free(tmp);
         tmp = next;
     }
-04:
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 05:
-cache_dir + "/" + "Items"
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)

@@ -1,2 +1,2 @@
 
-cache_dir + "/Items/" + i + ".txt"
+cache_dir + "/" + "Items"
