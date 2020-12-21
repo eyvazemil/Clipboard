@@ -1,43 +1,62 @@
 00:
-https://courses.fit.cvut.cz/BI-OOP/projects/ASCII-art.html
+Таким образом, так называемый «национальный характер» – миф,
+ибо для каждой новой эпохи он будет другим, даже при
+ненарушенности последовательности смены фаз этногенеза.
+Например, Илья Ильич Обломов и его слуга Захар – лентяи. Однако
+их предки отбили от татар Заволжья богатые земли, завели на них
+доходное хозяйство и построили себе удобные красивые дома,
+наполнив их книгами и картинами. Предки Раневской развели
+вишневый сад, который она пустила на ветер. Купчики из пьес
+Островского тратят капиталы, сколоченные их дедами. Так что жехарактерно для «русского» психологического типа: строгое
+собирательство или веселое, беззаботное расточительство? Видимо,
+то и другое, но в зависимости от эпохи, т. е. фазы этногенеза. Эти
+изменения идут неуклонно, не будучи функционально связаны ни с
+модификациями географической среды, ни со сменами
+общественно-экономических
+формаций,
+хотя
+постоянно
+взаимодействуют с теми и другими. Но это интерференция
+«независимых переменных», сопряженных в историческом
+процессе.
 01:
-stories
+https://courses.fit.cvut.cz/BI-OOP/projects/ASCII-art.html
 02:
---ttl=200
+stories
 03:
-next = tmp->next;
+--ttl=200
 04:
-free(tmp->elem);
+next = tmp->next;
 05:
---comment
+free(tmp->elem);
 06:
---page-size=1
+--comment
 07:
-top-stories
+--page-size=1
 08:
-add_to_map
+top-stories
 09:
-size_of_clipboard
+add_to_map
 10:
---comment=top
+size_of_clipboard
 11:
-Items
+--comment=top
 12:
-add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
+Items
 13:
-Jaké pozice Vás zajímají?
+add_to_map(i.substring(0, i.length - 4), file_contents._3, is_item = true)
 14:
-Jaké je Vaše nejvyšší dosažené vzdělání?
+Jaké pozice Vás zajímají?
 15:
-tmp = next;
+Jaké je Vaše nejvyšší dosažené vzdělání?
 16:
+tmp = next;
+17:
 next = tmp->next;
         free(tmp->elem);
         free(tmp);
         tmp = next;
-17:
-assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
 18:
-Možný nástupní termín
+assert(Cache.read_dir(Cache.cache_dir + "/Items").isEmpty)
 19:
-assert(Cache.cache_item_files.contains(id2))
+Možný nástupní termín
