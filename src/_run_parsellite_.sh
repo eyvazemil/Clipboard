@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#! /bin/sh
 
 FILE="$1"
 _PPID="$2"

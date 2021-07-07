@@ -3,17 +3,17 @@ OBJECTS = main.o avl_tree.o
 RM = rm -f
 OUT = a.out
 CLIP_SIZE = 20
-BASE_DIR = "/home/user/Documents/Programming/C_Files/Clipboard"
-CURRENT_CLIP_FILE = "/home/user/Documents/Programming/C_Files/Clipboard/Resources/current_clipboard.txt"
-HISTORY_CLIP_FILE = "/home/user/Documents/Programming/C_Files/Clipboard/Resources/clipboard_history.txt"
-CLIP_READ_SCRIPT = "/home/user/Documents/Programming/C_Files/Clipboard/src/_run_parsellite_.sh"
+BASE_DIR = "/home/emil/Documents/Programming/C_Files/Clipboard"
+CURRENT_CLIP_FILE = "/home/emil/Documents/Programming/C_Files/Clipboard/Resources/current_clipboard.txt"
+HISTORY_CLIP_FILE = "/home/emil/Documents/Programming/C_Files/Clipboard/Resources/clipboard_history.txt"
+CLIP_READ_SCRIPT = "/home/emil/Documents/Programming/C_Files/Clipboard/src/_run_parsellite_.sh"
 DELAY = 10 # delay in seconds
-DAEMON_PID = "/home/user/Documents/Programming/C_Files/Clipboard/Resources/daemon_pid.txt"
-LOG_FILE = "/home/user/Documents/Programming/C_Files/Clipboard/Resources/log.txt"
-STDOUT = "/home/user/Documents/Programming/C_Files/Clipboard/Resources/stdout.txt"
-STDERR = "/home/user/Documents/Programming/C_Files/Clipboard/Resources/stderr.txt"
-GIT_SYNCH = "/home/user/Documents/Programming/C_Files/Clipboard/src/_git_synch_.sh"
-GIT_CLONE = "/home/user/Documents/Programming/C_Files/Clipboard/src/_git_clone_.sh"
+DAEMON_PID = "/home/emil/Documents/Programming/C_Files/Clipboard/Resources/daemon_pid.txt"
+LOG_FILE = "/home/emil/Documents/Programming/C_Files/Clipboard/Resources/log.txt"
+STDOUT = "/home/emil/Documents/Programming/C_Files/Clipboard/Resources/stdout.txt"
+STDERR = "/home/emil/Documents/Programming/C_Files/Clipboard/Resources/stderr.txt"
+GIT_SYNCH = "/home/emil/Documents/Programming/C_Files/Clipboard/src/_git_synch_.sh"
+GIT_CLONE = "/home/emil/Documents/Programming/C_Files/Clipboard/src/_git_clone_.sh"
 
 all: compile
 
@@ -29,6 +29,6 @@ compile: $(OBJECTS)
 run: $(OBJECTS)
 	./$(OUT) $(CLIP_SIZE) $(CURRENT_CLIP_FILE) $(HISTORY_CLIP_FILE) $(CLIP_READ_SCRIPT) $(DELAY) $(DAEMON_PID) $(LOG_FILE) $(STDOUT) $(STDERR) $(GIT_SYNCH) $(BASE_DIR) $(GIT_CLONE)
 
-clean: $(OUT)
+clean:
 	$(RM) *.o
-	$(RM) $(OUT)
+	@if [ -e ${OUT} ]; then rm -f ${OUT}; fi

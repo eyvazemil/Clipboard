@@ -1,0 +1,1 @@
+/home/emil/Documents/Programming/C_Files/Clipboard/src/_run_parsellite_.sh: line 6: kill: (6305) - No such process
