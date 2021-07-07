@@ -1,0 +1,4 @@
+fatal: write failure on standard output: Bad file descriptor
+To https://github.com/eyvazemil/Clipboard.git
+   c71e594..e761903  master -> master
+/home/user/Documents/Programming/C_Files/Clipboard/src/_git_clone_.sh: line 8: kill: (12178) - No such process
