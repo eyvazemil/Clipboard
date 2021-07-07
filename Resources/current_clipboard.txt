@@ -1,2 +1,2 @@
 
-/home/emil/
+clipboard_run
