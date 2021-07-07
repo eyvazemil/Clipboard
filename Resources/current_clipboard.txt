@@ -1,2 +1,2 @@
 
-clipboard_run
+cpu_run
